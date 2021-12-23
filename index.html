@@ -8,9 +8,9 @@
 </head>
 <body>
     <!-- Start Quiz button -->
-    <div class="start_btn"><button>Start</button></div>
+    <div class="start_btn"><button>Start Quiz</button></div>
     <!-- Player Score button -->
-    <!-- <div class="player_scores_btn"><button>Scores</button></div> -->
+    <div class="player_scores_btn"><button>Player Scores</button></div>
 
     <!-- Info Box -->
     <div class="info_box">
@@ -18,6 +18,8 @@
         <div class="info-list">
             <div class="info">- You will have only <span>60 seconds</span> for all questions.</div>
             <div class="info">- Once you select your answer it can't be changed.</div>
+            <div class="info">- If you select the wrong answer, you will lose 10 seconds from timer.</div>
+            <div class="info">- The quiz will end if timer runs out or all questions answered.</div>
         </div>
         <div class="buttons">
             <button class="quit">Exit</button>
@@ -26,10 +28,18 @@
     </div>
 
     <!-- Scores Box -->
-    <!-- <div class="scores_box">
-        <div class="score-title"><span>Player Scores</span></div>
+    <div class="scores_box">
+        <div class="scores-title"><span>Player Scores</span></div>
 
-    </div> -->
+        <table class="player_scores">
+        </table>
+
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Try Again</button>
+        </div>
+
+    </div>
 
     <!-- Quiz Box -->
     <div class="quiz_box">
@@ -54,16 +64,17 @@
             <div class="total_que">
                 <!-- Here I've inserted Question Count Number from JavaScript -->
             </div>
-            <button class="restart">Replay</button>
+
+            <div class="buttons">
+                <button class="quit">Exit</button>
+            </div>
+            
             <button class="next_btn">Next Question</button>
         </footer>
     </div>
 
     <!-- Result Box -->
     <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
         <div class="complete_text">You've completed the Quiz!</div>
         <div class="score_text">
             <!-- Here I've inserted Score Result from JavaScript -->
@@ -80,7 +91,6 @@
     </div>
 
 
-    <script src="questions.js"></script>
     <script src="script.js"></script>
 
 </body>
