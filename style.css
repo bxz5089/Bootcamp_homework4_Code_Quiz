@@ -28,7 +28,7 @@ body{
 
 .start_btn{
     position: absolute;
-    top: 47%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -37,7 +37,7 @@ body{
 
 .player_scores_btn {
     position: absolute;
-    top: 53%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -417,12 +417,23 @@ footer .buttons .quit.show{
     background: #1e3fa4;
 }
 
-.buttons button.submit{
+.player_initials button.submitbtn{
     color: #1e3fa4;
-    background: #fff;
+    background: #fff; 
+    margin: 10px auto;
+    height: auto;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #1e3fa4;
+    transition: all 0.3s ease;
 }
 
-.buttons button.submit:hover{
+.player_initials button.submitbtn:hover{
     color: #fff;
     background: #1e3fa4;
 }
